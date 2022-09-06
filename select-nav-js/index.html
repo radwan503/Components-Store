@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./selectNav.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav id="nav">
+        <ul>
+            <li>
+                <a href="?=item-1">Top Level Item 1</a>
+                <ul>
+                    <li><a href="?=sub-1">Sub Item 1</a></li>
+                    <li><a href="?=sub-2">Sub Item 2</a></li>
+                    <li><a href="?=sub-3">Sub Item 3</a></li>
+                    <li><a href="?=sub-4">Sub Item 4</a></li>
+                    <li><a href="?=sub-5">Sub Item 5</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="?=item-2">Top Level Item 2</a>
+            </li>
+            <li>
+                <a href="?=item-3">Top Level Item 3</a>
+            </li>
+            <li>
+                <a href="?=item-4">Top Level Item 4</a>
+                <ul>
+                    <li><a href="?=sub-1">Sub Item 1</a></li>
+                    <li><a href="?=sub-2">Sub Item 2</a></li>
+                    <li><a href="?=sub-3">Sub Item 3</a></li>
+                    <li><a href="?=sub-4">Sub Item 4</a></li>
+                    <li>
+                        <a href="?=sub-5">Sub Item 5</a>
+                        <ul>
+                            <li><a href="?=sub-sub-1">Sub-sub Item 1</a></li>
+                            <li><a href="?=sub-sub-2">Sub-sub Item 2</a></li>
+                            <li><a href="?=sub-sub-3">Sub-sub Item 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <script>
+        selectnav();
+    </script>
+</body>
+
+</html>
